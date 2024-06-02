@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:background="@color/creamCandle"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgEnvios"
+        android:layout_width="98dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="40dp"
+        android:src="@mipmap/envios" />
+
+    <TextView
+        android:id="@+id/tvEnvios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvEnvios"
+        android:textColor="@color/purpleCandle"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/imgEnvios"/>
+
+    <LinearLayout
+        android:id="@+id/llForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/imgEnvios">
+
+        <TextView
+            android:id="@+id/tvCosto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvCosto"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/etCosto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvKm"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:id="@+id/etKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCalcular"
+        android:backgroundTint="@color/pinkCandle"
+        android:layout_below="@+id/llForm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvTotal"
+        android:textSize="20sp"
+        android:layout_marginTop="40sp"
+        android:layout_below="@id/btnCalcular"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvTotal"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnSi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSi"
+            android:backgroundTint="@color/pinkCandle" />
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnNo"
+            android:backgroundTint="@color/pinkCandle"
+            android:layout_marginStart="50dp" />
+    </LinearLayout>
+
+</RelativeLayout>

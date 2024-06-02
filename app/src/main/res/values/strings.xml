@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CandleLight</string>
+    <string name="tvEnvios">Envios</string>
+    <string name="tvCosto">El costo de su compra es:</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="tvKm">Ingrese su distancia en kilometros:</string>
+    <string name="tvTotal">Costo del envio:\n¿Confirma su pedido?</string>
+    <string name="btnSi">Si</string>
+    <string name="btnNo">No</string>
+</resources>
